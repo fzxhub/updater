@@ -2,8 +2,8 @@
 <html>
   <head>
     <!--<link rel="stylesheet" type="text/css" href="sakura.css" />-->
-    <link href="./all.min.css" rel="stylesheet">
-    <title>Updater - CANable</title>
+    <link href="./main.css" rel="stylesheet">
+    <title>Updater - Bugable</title>
     <script src="dfu.js"></script>
     <script src="dfuse.js"></script>
     <script src="FileSaver.js"></script>
@@ -53,14 +53,14 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="/"><img class="mr20" src="/images/logo.png" alt="logo"></a>
+                        <a class="pull-left" href="/"><img class="mr20" src="./logo.svg" alt="logo"></a>
                     </div>
-                    <div class="nav pull-right">
+                    <!-- <div class="nav pull-right">
                                 <a href="/">Home</a>
                                 <a href="https://openlightlabs.com/">Store</a>
                                 <a href="/getting-started.html">Getting Started</a>
                                 <a href="/updater/">Updater</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- /Static navbar -->
@@ -71,7 +71,7 @@
         <div class="row">
               <div class="col-lg-12">
                   <div class="header-content">
-                      <h1 class="header-title">Update your CANable</h1>
+                      <h1 class="header-title">Update your Bugable</h1>
                       <div class="header-underline"></div>
                       <div class="clearfix"></div>
                   </div>
@@ -88,24 +88,19 @@
     <div class="container content">
         <h1>Updater</h1>
         <ul>
-            <li>First, move your "Boot" jumper to the boot position, or hold down the "Boot" button on your CANable Pro, then plug it in</li>
-            <li>Next, select the firmware you want to flash and press "Connect and Update" below</li>
-	    <li>Nothing showing up in the Chrome connection window on Windows? Run <a href="https://canable.io/utilities/ImpulseRC_Driver_Fixer.exe">this utility</a> to fix your drivers.</li>
-	    <li>Nothing showing up on Linux? You likely need to <a href="udev.html">add a udev rule</a> or run Chrome as root</li>
+            <li>首先按住(带外壳设备请使用卡针)Bugable的Boot按键后将Bugable通过USB插入PC, 插入USB后就可松开Boot按键。</li>
+            <li>然后在下方选择要刷入的固件后, 点击“连接并刷入”按钮等待刷入完成即可。</li>
+            <p>     </p>
+	        <li>注意: 如在Windows的谷歌浏览器上不能显示设备请安装<a href="./driver/ImpulseRC_Driver_Fixer.exe">驱动</a>。</li>
+	        <li>注意: 如在Linux的谷歌浏览器上不能显示设备请添加规则或者使用超级用户启动谷歌浏览器。</li>
         </ul>
         
         <p>
             <select id="firmware_path" style="height: 28px;">
 
-                <option value=".\pcan.bin">slcan (9fddea4 6/29/2023)</option>
-		<!--<option value="/builds/slcan-firmware/canable-0e2e916.bin">slcan (0e2e916 1/21/2023)</option>-->
-                <option value="/builds/slcan-firmware/canable-1205aa6.bin">slcan legacy (1205aa6 4/10/2019)</option>
-                <option value="/builds/candlelight-firmware/gsusb_canable_a8a0757.bin">candlelight (a8a0757)</option>
-		<!--<option value="/builds/slcan-firmware/canable-1b8f8b8.bin">slcan (1b8f8b8 4/14/20) BETA</option>-->
-                <option value="/builds/candlelight-firmware/gsusb_canable_68df7d5.bin">candlelight (68df7d5 1/3/21) BETA</option>
-                <option value="/builds/pcan-firmware/pcan_canable_hw-449dc73.bin">pcan emulator (449dc73 1/27/21) BETA</option>
+                <option value="./bin/pcan.bin">peakcan</option>
             </select>
-            <button id="connect" style="height: 28px;">Connect and Update</button>
+            <button id="connect" style="height: 28px;">连接并刷入</button>
         <span id="status"></span>
         </p>
         
@@ -120,13 +115,14 @@
         </form>
         
 
-	<p style="padding-top: 3em;"><em>CANable builds are compiled direcly from the <a href="https://github.com/normaldotcom/candleLight_fw.git">candlelight</a> and <a href="https://github.com/normaldotcom/cantact-fw.git">slcan</a> repositories on github</em></p>
-        <p><em>Powered by Devan Lai's <a href="https://github.com/devanlai/webdfu">webdfu</a></em></p>
+	<!-- <p style="padding-top: 3em;"><em>CANable builds are compiled direcly from the <a href="https://github.com/normaldotcom/candleLight_fw.git">candlelight</a> and <a href="https://github.com/normaldotcom/cantact-fw.git">slcan</a> repositories on github</em></p>
+         <p><em>Powered by Devan Lai's <a href="https://github.com/devanlai/webdfu">webdfu</a></em></p> -->
     </div>
     
     
     
         <!-- Footer -->
+        <!--
         <div class="footer gradient-2">
             <div class="container footer-container ">
                 <div class="row">
@@ -161,6 +157,7 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- /Footer -->
         
   </body>

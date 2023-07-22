@@ -549,7 +549,7 @@ var device = null;
                     }
 
                     if (matching_devices.length == 0) {
-                        statusDisplay.textContent = 'Please plug in your CANable in boot mode'; // EMZ suppress this message 'No device found on auto.';
+                        statusDisplay.textContent = 'Please plug in your Dugable in boot mode'; // EMZ suppress this message 'No device found on auto.';
                     } else {
                         if (matching_devices.length == 1) {
                             statusDisplay.textContent = 'Connecting...';
@@ -557,7 +557,7 @@ var device = null;
                             console.log(device);
                             device = await connect(device);
                         } else {
-                            statusDisplay.textContent = "Detected CANable device";
+                            statusDisplay.textContent = "Detected Dugable device";
                         }
                         //vidField.value = "0x" + hex4(matching_devices[0].device_.vendorId).toUpperCase();
                         vid = matching_devices[0].device_.vendorId;
