@@ -478,7 +478,7 @@ var device = null;
                         }
                         await device.do_download(transferSize, firmwareFile, manifestationTolerant).then(
                             () => {
-                                logInfo("Your CANable has been updated! Return the boot jumper to its normal position, if applicable. Unplug/replug the device to start using the new firmware.");
+                                logInfo("Your Bugable has been updated! Return the boot jumper to its normal position, if applicable. Unplug/replug the device to start using the new firmware.");
                                 setLogContext(null);
                                 if (!manifestationTolerant) {
                                     device.waitDisconnected(5000).then(
@@ -549,7 +549,7 @@ var device = null;
                     }
 
                     if (matching_devices.length == 0) {
-                        statusDisplay.textContent = 'Please plug in your Dugable in boot mode'; // EMZ suppress this message 'No device found on auto.';
+                        statusDisplay.textContent = 'Please plug in your Bugable in boot mode'; // EMZ suppress this message 'No device found on auto.';
                     } else {
                         if (matching_devices.length == 1) {
                             statusDisplay.textContent = 'Connecting...';
@@ -557,7 +557,7 @@ var device = null;
                             console.log(device);
                             device = await connect(device);
                         } else {
-                            statusDisplay.textContent = "Detected Dugable device";
+                            statusDisplay.textContent = "Detected Bugable device";
                         }
                         //vidField.value = "0x" + hex4(matching_devices[0].device_.vendorId).toUpperCase();
                         vid = matching_devices[0].device_.vendorId;
@@ -755,7 +755,7 @@ var device = null;
                         }
                         await device.do_download(transferSize, firmwareFile, manifestationTolerant).then(
                             () => {
-                                logInfo("Your CANable has been updated! Return the boot jumper to its normal position, if applicable. Unplug/replug the device to start using the new firmware.");
+                                logInfo("Your Bugable has been updated! Return the boot jumper to its normal position, if applicable. Unplug/replug the device to start using the new firmware.");
                                 setLogContext(null);
                                 if (!manifestationTolerant) {
                                     device.waitDisconnected(5000).then(

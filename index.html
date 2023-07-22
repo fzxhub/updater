@@ -89,18 +89,18 @@
         <h1>Updater</h1>
         <ul>
             <li>首先按住(带外壳设备请使用卡针)Bugable的Boot按键后将Bugable通过USB插入PC, 插入USB后就可松开Boot按键。</li>
-            <li>然后在下方选择要刷入的固件后, 点击“连接并刷入”按钮等待刷入完成即可。</li>
+            <li>然后在下方选择要刷入的固件后, 点击“Connect and Update”按钮等待刷入完成即可。</li>
             <p>     </p>
 	        <li>注意: 如在Windows的谷歌浏览器上不能显示设备请安装<a href="./driver/ImpulseRC_Driver_Fixer.exe">驱动</a>。</li>
 	        <li>注意: 如在Linux的谷歌浏览器上不能显示设备请添加规则或者使用超级用户启动谷歌浏览器。</li>
         </ul>
-        
         <p>
             <select id="firmware_path" style="height: 28px;">
-
-                <option value="./bin/pcan.bin">peakcan</option>
+                <option value="./bin/CAN1_Peakcan_can_firmware.bin">CAN1_Peakcan_can_firmware</option>
+                <option value="./bin/CAN2_Peakcan_fd_firmware.bin">CAN2_Peakcan_fd_firmware</option>
+                <option value="./bin/CAN2_Vector_VN1610_firmware.hex">CAN2_Vector_VN1610_firmware</option>
             </select>
-            <button id="connect" style="height: 28px;">连接并刷入</button>
+            <button id="connect" style="height: 28px;">Connect and Update</button>
         <span id="status"></span>
         </p>
         
@@ -115,11 +115,9 @@
         </form>
         
 
-	<!-- <p style="padding-top: 3em;"><em>CANable builds are compiled direcly from the <a href="https://github.com/normaldotcom/candleLight_fw.git">candlelight</a> and <a href="https://github.com/normaldotcom/cantact-fw.git">slcan</a> repositories on github</em></p>
+	<!-- <p style="padding-top: 3em;"><em>Bugable builds are compiled direcly from the <a href="https://github.com/normaldotcom/candleLight_fw.git">candlelight</a> and <a href="https://github.com/normaldotcom/cantact-fw.git">slcan</a> repositories on github</em></p>
          <p><em>Powered by Devan Lai's <a href="https://github.com/devanlai/webdfu">webdfu</a></em></p> -->
     </div>
-    
-    
     
         <!-- Footer -->
         <!--
