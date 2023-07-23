@@ -93,12 +93,19 @@
             <p>     </p>
 	        <li>注意: 如在Windows的谷歌浏览器上不能显示设备请安装<a href="./driver/ImpulseRC_Driver_Fixer.exe">驱动</a>。</li>
 	        <li>注意: 如在Linux的谷歌浏览器上不能显示设备请添加规则或者使用超级用户启动谷歌浏览器。</li>
+            <li>注意: 设备有Bugable_CAN1、Bugable_CAN2, 请根据设备选择固件CAN1和CAN2固件不通用。</li>
+            <li>注意: 设备Bugable_CAN1、Bugable_CAN2中带有FD字样不表示支持CANFD, 仅表示模拟对象。</li>
+            
         </ul>
         <p>
             <select id="firmware_path" style="height: 28px;">
-                <option value="./bin/CAN1_Peakcan_can_firmware.bin">CAN1_Peakcan_can_firmware</option>
-                <option value="./bin/CAN2_Peakcan_fd_firmware.bin">CAN2_Peakcan_fd_firmware</option>
-                <option value="./bin/CAN2_Vector_VN1610_firmware.bin">CAN2_Vector_VN1610_firmware</option>
+                <option value="./bin/CAN1_Canable_CanableLight_firmware.bin">CAN1_Canable_CanableLight_firmware</option>
+                <option value="./bin/CAN1_Canable_Slcan_firmware.bin">CAN1_Canable_Slcan_firmware</option>
+                <option value="./bin/CAN1_Kvaser_LeafLightV2_firmware.bin">CAN1_Kvaser_LeafLightV2_firmware</option>
+                <option value="./bin/CAN1_Peakcan_CAN_firmware.bin">CAN1_Peakcan_CAN_firmware</option>
+                <option value="./bin/CAN2_Peakcan_FD_firmware.bin">CAN2_Peakcan_FD_firmware</option>
+                <option value="./bin/CAN2_Peakcan_PRO_firmware.bin">CAN2_Peakcan_PRO_firmware</option>
+                <option value="./bin/CAN2_Peakcan_PROFD_firmware.bin">CAN2_Peakcan_PROFD_firmware</option>
             </select>
             <button id="connect" style="height: 28px;">Connect and Update</button>
         <span id="status"></span>
