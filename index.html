@@ -88,18 +88,21 @@
   
     <div class="container content">
         <h1>Updater</h1>
+        <ol>
+            <li><b>首先按住(带外壳设备请使用卡针)Bugable的Boot按键后将Bugable通过USB插入PC。</b></li>
+            <li><b>插入USB后就可松开Boot按键, 然后选择要刷入的固件后, 点击“Connect and Update”按钮。</b></li>
+            <li><b>等待提示刷入完成后, 通过USB重插入Bugable即可使用。</b></li>
+        </ol>
+        <p>     </p>
         <ul>
-            <li>首先按住(带外壳设备请使用卡针)Bugable的Boot按键后将Bugable通过USB插入PC, 插入USB后就可松开Boot按键。</li>
-            <li>然后在下方选择要刷入的固件后, 点击“Connect and Update”按钮等待刷入完成即可。</li>
-            <p>     </p>
 	        <li>注意: 如在Windows的谷歌浏览器上不能显示设备请安装<a href="./driver/ImpulseRC_Driver_Fixer.exe">驱动</a>。</li>
 	        <li>注意: 如在Linux的谷歌浏览器上不能显示设备请添加规则或者使用超级用户启动谷歌浏览器。</li>
-            <li>注意: 设备有Bugable_CAN1、Bugable_CAN2, 请根据设备选择固件CAN1和CAN2固件不通用。</li>
-            <li>注意: 设备Bugable_CAN1、Bugable_CAN2中带有FD字样不表示支持CANFD, 仅表示模拟对象。</li>
-            
+            <li>注意: 设备有Bugable_CAN1、Bugable_CAN2, 请根据设备选择固件, CAN1和CAN2固件不通用。</li>
+            <li>注意: 设备Bugable_CAN1、Bugable_CAN2中带有FD字样不表示支持CANFD, 仅表示模拟对象。</li>    
         </ul>
-        <p>
-            <select id="firmware_path" style="height: 28px;">
+
+        <p style="text-indent:28px">
+            <select id="firmware_path" style="height: 32px;">
                 <option value="./bin/CAN1_Canable_CanableLight_firmware.bin">CAN1_Canable_CanableLight_firmware</option>
                 <option value="./bin/CAN1_Canable_Slcan_firmware.bin">CAN1_Canable_Slcan_firmware</option>
                 <option value="./bin/CAN1_Kvaser_LeafLightV2_firmware.bin">CAN1_Kvaser_LeafLightV2_firmware</option>
@@ -108,8 +111,11 @@
                 <option value="./bin/CAN2_Peakcan_PRO_firmware.bin">CAN2_Peakcan_PRO_firmware</option>
                 <option value="./bin/CAN2_Peakcan_PROFD_firmware.bin">CAN2_Peakcan_PROFD_firmware</option>
             </select>
-            <button id="connect" style="height: 28px;">Connect and Update</button>
-        <span id="status"></span>
+            <button id="connect" style="height: 32px;">Connect and Update</button> <br> 
+        </p>
+
+        <p style="text-indent:28px">
+            <span id="status"></span>
         </p>
         
         <p>
